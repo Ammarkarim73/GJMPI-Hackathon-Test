@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2nd year CIT time table</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body id="body">
+    <h1>	
+        Govt. Jamia Millia Polytechnic Institute Malir, Karachi.
+    </h1>
+
+    <div id="subhead">	Employment Through Skill	</div>
+
+    <hr />
+
+
+    <form id="form" action="javascript:void(0);" onsubmit="setData();" class="flexcol">
+
+
+        <div class="flex">
+            <!-- 1st dropdown -->
+
+            <div class="flex">
+            <select id="class" required onfocus="green(id)" onblur="blue(id)" name="city">
+            <option value="">Select Class</option>
+            <option value="Sir Ghous">Sir Ghous</option>
+            <option value="Sir Faisal">Sir Faisal</option>
+            <option value="Sir Inzamam">Sir Inzamam</option>
+            <option value="Sir Kashif">Sir Kashif</option>
+            </select>
+        </div>
+
+            <!-- 2nd dropdown -->
+
+
+            <div class="flex">
+            <select id="course" required onfocus="green(id)" onblur="blue(id)" name="course">
+            <option value="">Select Course</option>
+            <option value="Web and Mobile App">Web and Mobile App</option>
+            <option value="Graphic Design">Graphic Design</option>
+            </select>
+            </div>
+        </div>
+
+        <div class="flex">
+            <!-- 3rd input -->
+            <div class="flex">
+                <input  id="name" onfocus="darkBlue(id)" required onblur="blue(id)" type="text" placeholder="Full name" maxlength="32" minlength="1" />
+                </div>
+
+
+                <!-- 4th input -->
+
+                <div class="flex">
+                    <input id="Fname" onfocus="darkBlue(id)" required onblur="blue(id)" type="text" placeholder="Father name" maxlength="32" minlength="1" />
+                    </div>
+
+        </div>
+
+        <div class="flex">
+            <!-- 5th input -->
+            <div class="flex">
+                <input id="rollNO" onfocus="darkBlue(id)" required onblur="blue(id)" type="text" placeholder="Roll #" maxlength="32" minlength="1" />
+                </div>
+
+
+                <!-- 6th input -->
+
+                <div class="flex">
+                    <input id="number" onfocus="darkBlue(id)" required onblur="blue(id)" type="number" placeholder="Phone Number" maxlength="32" minlength="1" />
+                    </div>
+
+        </div>
+
+        <div class="flex">
+            <!-- 7th input -->
+            <div class="flex">
+                <input id="cnic" onfocus="darkBlue(id)" required onblur="blue(id)" type="number" placeholder="CNIC Number = 4220164544621" maxlength="32" minlength="1" />
+                </div>
+                    </div>
+
+
+
+                    <div class="flexabc">
+                        <!-- upload picture -->
+
+                        <div id="showPic" class="hidden"></div>
+
+                        <label id="label" for="file">+ Upload
+                            <input id="file" style="display: none;" type="file" accept="image/*"/>
+                        </label>
+
+                        <ul>
+                            <li>With white or blue background</li>
+                            <li>File size must be less than 1MB</li>
+                            <li>File type: jpg, jpeg, png</li>
+                            <li>Upload your recent passport size picture</li>
+                            <li>Your Face should be clearly visible without any Glasses</li>
+                        </ul>
+                        
+
+
+
+
+                    </div>
+
+
+        <button id="submit" type="submit" onclick="setData()" value="submit">SUBMIT</button>
+
+    </form>
+    
+
+
+</body>
+
+<script type="module" src="./script.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+
+</html>
